@@ -29,6 +29,7 @@ For doing so we should modify the **libvipsPropertySheet.props** file as follows
 
 * Update config.h with needed dependencies and remove not needed macros
 * Get a commandline with the minimum dependencies requirements for getting external libraries using vcpkg
+* Port libvips to vcpkg: https://github.com/Microsoft/vcpkg/issues/2676
 
 ## License
 
