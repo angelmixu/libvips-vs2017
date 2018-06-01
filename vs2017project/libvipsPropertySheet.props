@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <LibSubPath Condition="'$(Configuration)'=='Debug'">debug\lib</LibSubPath>
+    <LibSubPath Condition="'$(Configuration)'!='Debug'">lib</LibSubPath>
+    <BinSubPath Condition="'$(Configuration)'=='Debug'">debug\bin</BinSubPath>
+    <BinSubPath Condition="'$(Configuration)'!='Debug'">bin</BinSubPath>
+    <LibSuffix Condition="'$(Configuration)'=='Debug'">d</LibSuffix>
+    <LibSuffix Condition="'$(Configuration)'!='Debug'">
+    </LibSuffix>
+    <CommonDefines>HAVE_CONFIG_H;OS_WIN32;_CRT_SUPPRESS_RESTRICT;DLL_EXPORT;VIPS_CPLUSPLUS_EXPORTS;VIPS_CC_EXPORTS;</CommonDefines>
+    <vipsDefines Condition="'$(Configuration)'=='Debug'">$(CommonDefines)</vipsDefines>
+    <vipsDefines Condition="'$(Configuration)'!='Debug'">$(CommonDefines); G_DISABLE_ASSERT; G_DISABLE_CHECKS;</vipsDefines>
+    <vcpkgInstalledPath>$(ProjectDir)..\..\..\ossBinaries\</vcpkgInstalledPath>
+    <vipsSrcPath>..\srclibvips\</vipsSrcPath>
+    <LibrariesOutputPath>$(vcpkgInstalledPath)\custom\$(Platform)\$(LibSubPath)\</LibrariesOutputPath>
+    <DLLOutputPath>$(vcpkgInstalledPath)\custom\$(Platform)\$(BinSubPath)\</DLLOutputPath>
+    <HeadersOutputPath>$(vcpkgInstalledPath)\custom\$(Platform)\include\</HeadersOutputPath>
+    <vcpkgIncludePath>$(vcpkgInstalledPath)\$(Platform)\include</vcpkgIncludePath>
+    <vcpkgLibrariesPath>$(vcpkgInstalledPath)\$(Platform)\$(LibSubPath)\</vcpkgLibrariesPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutDir>$(DLLOutputPath)</OutDir>
+    <IntDir>$(ProjectDir)build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatSpecificWarningsAsErrors>4013;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <AdditionalIncludeDirectories>.\;$(vipsSrcPath)libvips\include\;$(vipsSrcPath)libvipsCC\include\;$(vipsSrcPath)cplusplus\include\;$(vcpkgIncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(vipsDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)\$(ProjectName)\$(ConfigurationName)\%(RelativeDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)\$(ProjectName)\$(ConfigurationName)\%(RelativeDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)\$(ProjectName)\$(ConfigurationName)\%(RelativeDir)\vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <ImportLibrary>$(LibrariesOutputPath)$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(vcpkgLibrariesPath);$(LibrariesOutputPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="vcpkgInstalledPath">
+      <Value>$(vcpkgInstalledPath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="vipsSrcPath">
+      <Value>$(vipsSrcPath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LibrariesOutputPath">
+      <Value>$(LibrariesOutputPath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DLLOutputPath">
+      <Value>$(DLLOutputPath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="HeadersOutputPath">
+      <Value>$(HeadersOutputPath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="vcpkgIncludePath">
+      <Value>$(vcpkgIncludePath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="vcpkgLibrariesPath">
+      <Value>$(vcpkgLibrariesPath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CommonDefines">
+      <Value>$(CommonDefines)</Value>
+    </BuildMacro>
+    <BuildMacro Include="vipsDefines">
+      <Value>$(vipsDefines)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

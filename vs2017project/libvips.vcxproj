@@ -1,0 +1,761 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\abs.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\add.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\arithmetic.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\avg.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\binary.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\boolean.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\complex.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\deviate.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\divide.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\find_trim.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\getpoint.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\hist_find.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\hist_find_indexed.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\hist_find_ndim.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\hough.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\hough_circle.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\hough_line.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\invert.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\linear.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\math.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\math2.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\max.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\measure.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\min.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\multiply.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\nary.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\profile.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\project.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\relational.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\remainder.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\round.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\sign.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\statistic.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\stats.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\subtract.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\sum.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\unary.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\unaryconst.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\colour.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\colourspace.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\dE00.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\dE76.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\dECMC.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\float2rad.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\HSV2sRGB.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\icc_transform.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\Lab2LabQ.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\Lab2LabS.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\Lab2LCh.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\Lab2XYZ.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\LabQ2Lab.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\LabQ2LabS.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\LabQ2sRGB.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\LabS2Lab.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\LabS2LabQ.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\LCh2Lab.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\LCh2UCS.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\rad2float.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\scRGB2BW.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\scRGB2sRGB.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\scRGB2XYZ.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\sRGB2HSV.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\sRGB2scRGB.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\UCS2LCh.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\XYZ2Lab.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\XYZ2scRGB.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\XYZ2Yxy.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\Yxy2XYZ.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\arrayjoin.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\autorot.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\bandary.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\bandbool.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\bandfold.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\bandjoin.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\bandmean.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\bandrank.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\bandunfold.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\byteswap.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\cache.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\cast.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\composite.cpp" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\conversion.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\copy.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\embed.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\extract.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\falsecolour.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\flatten.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\flip.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\gamma.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\grid.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\ifthenelse.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\insert.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\join.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\msb.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\premultiply.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\recomb.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\replicate.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\rot.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\rot45.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\scale.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\sequential.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\smartcrop.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\subsample.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\tilecache.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\transpose3d.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\unpremultiply.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\wrap.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\zoom.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\canny.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\compass.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\conv.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\conva.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\convasep.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\convf.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\convi.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\convolution.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\convsep.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\correlation.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\fastcor.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\gaussblur.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\sharpen.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\sobel.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\spcor.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\black.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\buildlut.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\create.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\eye.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\fractsurf.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\gaussmat.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\gaussnoise.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\grey.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\identity.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\invertlut.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\logmat.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_butterworth.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_butterworth_band.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_butterworth_ring.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_fractal.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_gaussian.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_gaussian_band.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_gaussian_ring.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_ideal.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_ideal_band.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_ideal_ring.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\perlin.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\point.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\sines.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\text.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\tonelut.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\worley.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\xyz.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\create\zone.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\arith_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\cimg_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\colour_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\conver_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\convol_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\cooc_funcs.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\deprecated_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\dispatch_types.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\fits.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\format.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\format_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\freq_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\glds_funcs.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\hist_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_align_bands.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_analyze2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_benchmark.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_bernd.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_clamp.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_cmulnorm.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_convsub.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_csv2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_debugim.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_dif_std.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_exr2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_fav4.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_freq_mask.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_gadd.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_gaddim.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_gfadd.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_gradcor.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_jpeg2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_lab_morph.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_line.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_linreg.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_litecor.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_magick2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_mask2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_matcat.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_matinv.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_matmul.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_mattrn.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_maxpos_avg.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_maxpos_subpel.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_measure.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_openslide2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_png2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_point_bilinear.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_ppm2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_print.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_printlines.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_resize_linear.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_setbox.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_simcontr.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_slice.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_spatres.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_stretch3.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_thresh.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_tiff2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_video_test.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2csv.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2dz.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2jpeg.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2mask.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2png.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2ppm.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2tiff.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2webp.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_webp2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_zerox.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\inplace_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\lazy.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\mask_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\matalloc.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\matlab.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\morph_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\mosaicing_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\other_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\package.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\radiance.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\raw.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\rename.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\resample_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\rotmask.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\rw_mask.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\tone.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\video_dispatch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\vips7compat.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\drawink.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw_circle.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw_flood.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw_image.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw_line.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw_mask.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw_rect.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw_smudge.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\analyze2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\analyzeload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\cairo.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\csv.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\csvload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\csvsave.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\dzsave.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\exif.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\fits.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\fitsload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\fitssave.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\foreign.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\gifload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\jpeg2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\jpegload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\jpegsave.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\magick2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\magick7load.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\magickload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\matlab.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\matload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\matrixload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\matrixsave.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\openexr2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\openexrload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\openslide2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\openslideload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\pdfload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\pngload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\pngsave.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\ppm.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\ppmload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\ppmsave.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\radiance.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\radload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\radsave.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\rawload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\rawsave.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\svgload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\tiff.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\tiff2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\tiffload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\tiffsave.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\vips2jpeg.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\vips2tiff.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\vips2webp.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\vipsload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\vipspng.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\vipssave.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\webp2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\webpload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\webpsave.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\freqfilt.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\freqmult.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\fwfft.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\invfft.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\phasecor.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\spectrum.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\fuzz\fuzz_new_from_buffer.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\histogram.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_cum.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_entropy.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_equal.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_ismonotonic.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_local.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_match.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_norm.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_plot.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_unary.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\maplut.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\percent.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\stdif.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\base64.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\buf.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\buffer.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\cache.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\dbuf.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\enumtypes.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\error.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\gate.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\generate.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\header.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\image.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\init.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\mapfile.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\memory.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\object.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\operation.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\rect.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\region.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\reorder.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\semaphore.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\sink.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\sinkdisc.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\sinkmemory.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\sinkscreen.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\system.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\threadpool.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\type.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\util.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\vector.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\vipsmarshal.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\window.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\morphology\countlines.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\morphology\hitmiss.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\morphology\labelregions.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\morphology\morph.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\morphology\morphology.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\morphology\nearest.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\morphology\rank.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\global_balance.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_avgdxdy.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_chkpair.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_clinear.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_improve.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_initialize.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_lrcalcon.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_lrmerge.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_lrmosaic.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_remosaic.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_tbcalcon.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_tbmerge.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_tbmosaic.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\match.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\merge.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\mosaic.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\mosaic1.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\mosaicing.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\affine.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\bicubic.cpp" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\dummy2.cc" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\interpolate.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\lbb.cpp" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\mapim.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\nohalo.cpp" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\quadratic.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\reduce.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\reduceh.cpp" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\reducev.cpp" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\resample.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\resize.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\shrink.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\shrinkh.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\shrinkv.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\similarity.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\thumbnail.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\transform.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\vsqbs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\binary.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\hough.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\nary.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\parithmetic.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\statistic.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\unary.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\unaryconst.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\colour\pcolour.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\conversion\bandary.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\conversion\pconversion.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\convolution\correlation.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\convolution\pconvolution.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\create\pcreate.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\create\pmask.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\create\point.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\draw\drawink.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\draw\pdraw.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\foreign\dbh.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\foreign\jpeg.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\foreign\pforeign.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\foreign\tiff.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\freqfilt\pfreqfilt.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\histogram\hist_unary.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\histogram\phistogram.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\almostdeprecated.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\arithmetic.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\basic.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\buf.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\cimg_funcs.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\colour.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\conversion.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\convolution.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\create.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\dbuf.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\debug.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\deprecated.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\dispatch.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\draw.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\enumtypes.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\error.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\foreign.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\format.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\freqfilt.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\gate.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\generate.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\header.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\histogram.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\image.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\internal.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\interpolate.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\intl.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\mask.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\memory.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\morphology.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\mosaicing.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\object.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\operation.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\private.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\rect.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\region.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\resample.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\semaphore.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\soname.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\thread.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\threadpool.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\transform.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\type.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\util.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\vector.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\version.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\video.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\vips.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\vips7compat.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\iofuncs\base64.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\iofuncs\sink.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\iofuncs\vipsmarshal.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\morphology\pmorphology.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\mosaicing\global_balance.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\mosaicing\pmosaicing.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\resample\presample.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\resample\templates.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libvips.def" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6C203D72-D753-4845-B858-126E7F4A9BA2}</ProjectGuid>
+    <RootNamespace>vips</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>libvips</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+    <Import Project="libvipsPropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+    <Import Project="libvipsPropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+    <Import Project="libvipsPropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+    <Import Project="libvipsPropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>libvips</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>libvips</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>libvips</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>libvips</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/vips.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <PrecompiledHeaderOutputFile>.\Debug/vips.pch</PrecompiledHeaderOutputFile>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0c0a</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;expat.lib;libexif.lib;jpeg.lib;libpng16$(LibSuffix).lib;tiff$(LibSuffix).lib;lcms2$(LibSuffix).lib;libintl.lib;fontconfig.lib;pango-1.0.lib;pangoft2-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug />
+      <TargetMachine>MachineX86</TargetMachine>
+      <LinkTimeCodeGeneration />
+      <ImageHasSafeExceptionHandlers />
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/vips.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>md $(HeadersOutputPath)\vips
+xcopy /y /q $(vipsSrcPath)\libvips\include\vips\*.h  $(HeadersOutputPath)\vips
+xcopy /y /q $(ProjectDir)vips\version.h  $(HeadersOutputPath)\vips</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Debug/vips.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <PrecompiledHeaderOutputFile>.\Debug/vips.pch</PrecompiledHeaderOutputFile>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0c0a</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;expat.lib;libexif.lib;jpeg.lib;libpng16$(LibSuffix).lib;tiff$(LibSuffix).lib;lcms2$(LibSuffix).lib;libintl.lib;fontconfig.lib;pango-1.0.lib;pangoft2-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug />
+      <TargetMachine>MachineX64</TargetMachine>
+      <LinkTimeCodeGeneration />
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/vips.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>md $(HeadersOutputPath)\vips
+xcopy /y /q $(vipsSrcPath)\libvips\include\vips\*.h  $(HeadersOutputPath)\vips
+xcopy /y /q $(ProjectDir)vips\version.h  $(HeadersOutputPath)\vips</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/vips.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>
+      </StringPooling>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\Release/vips.pch</PrecompiledHeaderOutputFile>
+      <DebugInformationFormat />
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0c0a</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;expat.lib;libexif.lib;jpeg.lib;libpng16$(LibSuffix).lib;tiff$(LibSuffix).lib;lcms2$(LibSuffix).lib;libintl.lib;fontconfig.lib;pango-1.0.lib;pangoft2-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers />
+      <ModuleDefinitionFile>$(TargetName).def</ModuleDefinitionFile>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/vips.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>md $(HeadersOutputPath)\vips
+xcopy /y /q $(vipsSrcPath)\libvips\include\vips\*.h  $(HeadersOutputPath)\vips
+xcopy /y /q $(ProjectDir)vips\version.h  $(HeadersOutputPath)\vips</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/vips.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>
+      </StringPooling>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\Release/vips.pch</PrecompiledHeaderOutputFile>
+      <DebugInformationFormat />
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0c0a</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;expat.lib;libexif.lib;jpeg.lib;libpng16$(LibSuffix).lib;tiff$(LibSuffix).lib;lcms2$(LibSuffix).lib;libintl.lib;fontconfig.lib;pango-1.0.lib;pangoft2-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/vips.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>md $(HeadersOutputPath)\vips
+xcopy /y /q $(vipsSrcPath)\libvips\include\vips\*.h  $(HeadersOutputPath)\vips
+xcopy /y /q $(ProjectDir)vips\version.h  $(HeadersOutputPath)\vips</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

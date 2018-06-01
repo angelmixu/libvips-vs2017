@@ -1,0 +1,1500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="arithmetic">
+      <UniqueIdentifier>{4acbfe7b-0354-4f85-a079-4b5894deba4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="colour">
+      <UniqueIdentifier>{d47d19ea-85e5-47c1-9da0-2b3a5a87bdcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="conversion">
+      <UniqueIdentifier>{c874959b-e510-4aaa-9245-54afda738ce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="convolution">
+      <UniqueIdentifier>{f9fa2ac0-bb43-476c-af6f-a6e2a5d91020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="create">
+      <UniqueIdentifier>{39ee70ea-2a89-425f-b812-afb918737669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deprecated">
+      <UniqueIdentifier>{3d51b648-d238-4b61-a1db-980152c2f8a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="draw">
+      <UniqueIdentifier>{693d9fcb-08ba-4abe-9cf8-783f8906b88e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="foreign">
+      <UniqueIdentifier>{a0edbef8-f03d-44b2-ac68-0312847058b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freqfilt">
+      <UniqueIdentifier>{656ce621-47d0-46c3-8ab5-82d343ed0b00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="histogram">
+      <UniqueIdentifier>{75f48e64-d417-4677-9c5b-2882680a5eb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iofuncs">
+      <UniqueIdentifier>{f38b6e46-90f2-4ad0-a15e-917cf3a16cbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{8d233075-9f93-4b61-9c0c-82eca7f440a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="morphology">
+      <UniqueIdentifier>{37fcd18a-1beb-405e-9535-df7dd7f2ca79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mosaicing">
+      <UniqueIdentifier>{0d7230e0-0b9e-4683-a9d2-6d4cd73739bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resample">
+      <UniqueIdentifier>{d1e4311d-2e58-4e8d-a93a-9392406e3bd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fuzz">
+      <UniqueIdentifier>{ea880414-a52d-428d-8284-4e9d1f6a9a26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\abs.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\add.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\arithmetic.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\avg.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\binary.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\boolean.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\complex.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\deviate.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\divide.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\find_trim.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\getpoint.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\hist_find.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\hist_find_indexed.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\hist_find_ndim.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\hough.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\hough_circle.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\hough_line.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\invert.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\linear.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\math.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\math2.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\max.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\measure.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\min.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\multiply.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\nary.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\profile.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\project.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\relational.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\remainder.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\round.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\sign.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\statistic.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\stats.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\subtract.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\sum.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\unary.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\arithmetic\unaryconst.c">
+      <Filter>arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\colour.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\colourspace.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\dE00.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\dE76.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\dECMC.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\float2rad.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\HSV2sRGB.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\icc_transform.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\Lab2LabQ.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\Lab2LabS.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\Lab2LCh.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\Lab2XYZ.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\LabQ2Lab.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\LabQ2LabS.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\LabQ2sRGB.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\LabS2Lab.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\LabS2LabQ.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\LCh2Lab.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\LCh2UCS.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\rad2float.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\scRGB2BW.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\scRGB2sRGB.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\scRGB2XYZ.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\sRGB2HSV.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\sRGB2scRGB.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\UCS2LCh.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\XYZ2Lab.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\XYZ2scRGB.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\XYZ2Yxy.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\Yxy2XYZ.c">
+      <Filter>colour</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\arrayjoin.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\autorot.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\bandary.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\bandbool.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\bandfold.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\bandjoin.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\bandmean.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\bandrank.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\bandunfold.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\byteswap.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\cache.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\cast.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\composite.cpp">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\conversion.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\copy.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\embed.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\extract.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\falsecolour.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\flatten.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\flip.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\gamma.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\grid.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\ifthenelse.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\insert.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\join.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\msb.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\premultiply.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\recomb.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\replicate.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\rot.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\rot45.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\scale.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\sequential.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\smartcrop.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\subsample.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\tilecache.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\unpremultiply.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\wrap.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\zoom.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\compass.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\conv.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\conva.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\convasep.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\convf.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\convi.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\convolution.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\convsep.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\correlation.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\fastcor.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\gaussblur.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\sharpen.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\spcor.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\black.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\buildlut.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\create.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\eye.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\fractsurf.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\gaussmat.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\gaussnoise.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\grey.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\identity.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\invertlut.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\logmat.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_butterworth.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_butterworth_band.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_butterworth_ring.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_fractal.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_gaussian.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_gaussian_band.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_gaussian_ring.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_ideal.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_ideal_band.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\mask_ideal_ring.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\perlin.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\point.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\sines.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\text.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\tonelut.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\worley.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\xyz.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\create\zone.c">
+      <Filter>create</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\arith_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\cimg_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\colour_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\conver_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\convol_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\cooc_funcs.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\deprecated_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\dispatch_types.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\fits.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\format.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\format_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\freq_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\glds_funcs.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\hist_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_align_bands.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_analyze2vips.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_benchmark.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_bernd.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_clamp.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_cmulnorm.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_convsub.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_csv2vips.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_debugim.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_dif_std.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_exr2vips.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_fav4.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_freq_mask.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_gadd.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_gaddim.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_gfadd.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_gradcor.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_jpeg2vips.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_lab_morph.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_line.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_linreg.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_litecor.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_magick2vips.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_mask2vips.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_matcat.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_matinv.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_matmul.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_mattrn.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_maxpos_avg.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_maxpos_subpel.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_measure.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_openslide2vips.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_png2vips.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_point_bilinear.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_ppm2vips.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_print.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_printlines.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_resize_linear.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_setbox.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_simcontr.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_slice.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_spatres.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_stretch3.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_thresh.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_tiff2vips.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2csv.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2dz.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2jpeg.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2mask.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2png.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2ppm.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2tiff.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_vips2webp.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_webp2vips.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_zerox.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\inplace_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\lazy.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\mask_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\matalloc.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\matlab.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\morph_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\mosaicing_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\other_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\package.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\radiance.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\raw.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\rename.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\resample_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\rotmask.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\rw_mask.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\tone.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\vips7compat.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw.c">
+      <Filter>draw</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\drawink.c">
+      <Filter>draw</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw_circle.c">
+      <Filter>draw</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw_flood.c">
+      <Filter>draw</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw_image.c">
+      <Filter>draw</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw_line.c">
+      <Filter>draw</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw_mask.c">
+      <Filter>draw</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw_rect.c">
+      <Filter>draw</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\draw\draw_smudge.c">
+      <Filter>draw</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\analyze2vips.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\analyzeload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\cairo.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\csv.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\csvload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\csvsave.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\dzsave.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\exif.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\fits.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\fitsload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\fitssave.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\foreign.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\gifload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\jpeg2vips.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\jpegload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\jpegsave.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\magick2vips.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\magick7load.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\magickload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\matlab.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\matload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\matrixload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\matrixsave.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\openexr2vips.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\openexrload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\openslide2vips.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\openslideload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\pdfload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\pngload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\pngsave.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\ppm.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\ppmload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\ppmsave.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\radiance.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\radload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\radsave.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\rawload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\rawsave.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\svgload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\tiff.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\tiff2vips.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\tiffload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\tiffsave.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\vips2jpeg.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\vips2tiff.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\vips2webp.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\vipsload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\vipspng.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\vipssave.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\webp2vips.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\webpload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\webpsave.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\freqfilt.c">
+      <Filter>freqfilt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\freqmult.c">
+      <Filter>freqfilt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\fwfft.c">
+      <Filter>freqfilt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\invfft.c">
+      <Filter>freqfilt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\phasecor.c">
+      <Filter>freqfilt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\spectrum.c">
+      <Filter>freqfilt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\histogram.c">
+      <Filter>histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_cum.c">
+      <Filter>histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_entropy.c">
+      <Filter>histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_equal.c">
+      <Filter>histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_ismonotonic.c">
+      <Filter>histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_local.c">
+      <Filter>histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_match.c">
+      <Filter>histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_norm.c">
+      <Filter>histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_plot.c">
+      <Filter>histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_unary.c">
+      <Filter>histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\maplut.c">
+      <Filter>histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\percent.c">
+      <Filter>histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\stdif.c">
+      <Filter>histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\base64.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\buf.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\buffer.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\cache.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\dbuf.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\enumtypes.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\error.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\gate.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\generate.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\header.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\image.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\init.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\mapfile.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\memory.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\object.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\operation.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\rect.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\region.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\reorder.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\semaphore.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\sink.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\sinkdisc.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\sinkmemory.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\sinkscreen.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\system.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\threadpool.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\type.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\util.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\vector.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\vips.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\vipsmarshal.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\iofuncs\window.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\morphology\countlines.c">
+      <Filter>morphology</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\morphology\hitmiss.c">
+      <Filter>morphology</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\morphology\labelregions.c">
+      <Filter>morphology</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\morphology\morph.c">
+      <Filter>morphology</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\morphology\morphology.c">
+      <Filter>morphology</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\morphology\nearest.c">
+      <Filter>morphology</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\morphology\rank.c">
+      <Filter>morphology</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\global_balance.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_avgdxdy.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_chkpair.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_clinear.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_improve.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_initialize.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_lrcalcon.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_lrmerge.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_lrmosaic.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_remosaic.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_tbcalcon.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_tbmerge.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\im_tbmosaic.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\match.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\merge.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\mosaic.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\mosaic1.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\mosaicing\mosaicing.c">
+      <Filter>mosaicing</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\affine.c">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\bicubic.cpp">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\dummy2.cc">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\interpolate.c">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\lbb.cpp">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\mapim.c">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\nohalo.cpp">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\quadratic.c">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\reduce.c">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\reduceh.cpp">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\reducev.cpp">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\resample.c">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\resize.c">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\shrink.c">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\shrinkh.c">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\shrinkv.c">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\similarity.c">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\thumbnail.c">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\transform.c">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\resample\vsqbs.cpp">
+      <Filter>resample</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\transpose3d.c">
+      <Filter>conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\fuzz\fuzz_new_from_buffer.c">
+      <Filter>fuzz</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\canny.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\convolution\sobel.c">
+      <Filter>convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\video_dispatch.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_video_test.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\binary.h">
+      <Filter>arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\hough.h">
+      <Filter>arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\nary.h">
+      <Filter>arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\parithmetic.h">
+      <Filter>arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\statistic.h">
+      <Filter>arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\unary.h">
+      <Filter>arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\unaryconst.h">
+      <Filter>arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\colour\pcolour.h">
+      <Filter>colour</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\conversion\bandary.h">
+      <Filter>conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\conversion\pconversion.h">
+      <Filter>conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\convolution\correlation.h">
+      <Filter>convolution</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\convolution\pconvolution.h">
+      <Filter>convolution</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\create\pcreate.h">
+      <Filter>create</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\create\pmask.h">
+      <Filter>create</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\create\point.h">
+      <Filter>create</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\draw\drawink.h">
+      <Filter>draw</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\draw\pdraw.h">
+      <Filter>draw</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\foreign\dbh.h">
+      <Filter>foreign</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\foreign\jpeg.h">
+      <Filter>foreign</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\foreign\pforeign.h">
+      <Filter>foreign</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\foreign\tiff.h">
+      <Filter>foreign</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\freqfilt\pfreqfilt.h">
+      <Filter>freqfilt</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\histogram\hist_unary.h">
+      <Filter>histogram</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\histogram\phistogram.h">
+      <Filter>histogram</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\iofuncs\base64.h">
+      <Filter>iofuncs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\iofuncs\sink.h">
+      <Filter>iofuncs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\iofuncs\vipsmarshal.h">
+      <Filter>iofuncs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\almostdeprecated.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\arithmetic.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\basic.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\buf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\cimg_funcs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\colour.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\conversion.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\convolution.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\create.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\dbuf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\debug.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\deprecated.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\dispatch.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\draw.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\enumtypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\error.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\foreign.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\format.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\freqfilt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\gate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\generate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\header.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\histogram.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\image.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\internal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\interpolate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\intl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\mask.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\memory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\morphology.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\mosaicing.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\object.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\operation.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\private.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\rect.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\region.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\resample.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\semaphore.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\soname.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\thread.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\threadpool.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\transform.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\type.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\vector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\version.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\video.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\vips.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\include\vips\vips7compat.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\morphology\pmorphology.h">
+      <Filter>morphology</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\mosaicing\global_balance.h">
+      <Filter>mosaicing</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\mosaicing\pmosaicing.h">
+      <Filter>mosaicing</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\resample\presample.h">
+      <Filter>resample</Filter>
+    </ClInclude>
+    <ClInclude Include="$(vipsSrcPath)libvips\resample\templates.h">
+      <Filter>resample</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libvips.def" />
+  </ItemGroup>
+</Project>

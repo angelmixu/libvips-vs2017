@@ -1,0 +1,4 @@
+[submodule "srclibvips"]
+	path = srclibvips
+	url = https://github.com/angelmixu/libvips
+	branch = vs2017
