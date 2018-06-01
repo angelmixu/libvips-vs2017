@@ -25,6 +25,11 @@ For doing so we should modify the **libvipsPropertySheet.props** file as follows
 * **DLLOutputPath** macro contains the path where dynamic libraries (.dll files) will be installed.
 * **HeadersOutputPath** macro contains the path where header files (.h files) will be installed.
 
+## TODO
+
+* Update config.h with needed dependencies and remove not needed macros
+* Get a commandline with the minimum dependencies requirements for getting external libraries using vcpkg
+
 ## License
 
 This project is licensed as-is. 
