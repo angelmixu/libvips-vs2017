@@ -37,11 +37,12 @@
       <PreprocessorDefinitions>$(vipsDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>$(IntDir)\$(ProjectName)\$(ConfigurationName)\%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)\$(ProjectName)\$(ConfigurationName)\%(RelativeDir)</ObjectFileName>
-      <ProgramDataBaseFileName>$(IntDir)\$(ProjectName)\$(ConfigurationName)\%(RelativeDir)\vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(IntDir)\$(ProjectName)\$(ConfigurationName)\%(RelativeDir)</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
       <ImportLibrary>$(LibrariesOutputPath)$(TargetName).lib</ImportLibrary>
       <AdditionalLibraryDirectories>$(vcpkgLibrariesPath);$(LibrariesOutputPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>$(TargetName).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

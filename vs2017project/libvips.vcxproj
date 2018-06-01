@@ -699,7 +699,6 @@ xcopy /y /q $(ProjectDir)vips\version.h  $(HeadersOutputPath)\vips</Command>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetMachine>MachineX86</TargetMachine>
       <ImageHasSafeExceptionHandlers />
-      <ModuleDefinitionFile>$(TargetName).def</ModuleDefinitionFile>
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
