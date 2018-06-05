@@ -1493,6 +1493,8 @@
     <ClInclude Include="$(vipsSrcPath)libvips\resample\templates.h">
       <Filter>resample</Filter>
     </ClInclude>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="vips\version.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="libvips.def" />

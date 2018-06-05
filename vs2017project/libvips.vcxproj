@@ -501,6 +501,8 @@
     <ClInclude Include="$(vipsSrcPath)libvips\mosaicing\pmosaicing.h" />
     <ClInclude Include="$(vipsSrcPath)libvips\resample\presample.h" />
     <ClInclude Include="$(vipsSrcPath)libvips\resample\templates.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="vips\version.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="libvips.def" />
