@@ -594,11 +594,12 @@
       <MinimalRebuild>
       </MinimalRebuild>
       <DisableLanguageExtensions>false</DisableLanguageExtensions>
-      <PrecompiledHeaderOutputFile>.\Debug/vips.pch</PrecompiledHeaderOutputFile>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <CallingConvention>Cdecl</CallingConvention>
       <Optimization>Disabled</Optimization>
       <WholeProgramOptimization>false</WholeProgramOptimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -638,12 +639,11 @@ xcopy /y /q $(ProjectDir)vips\version.h  $(HeadersOutputPath)\vips</Command>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <MinimalRebuild>
       </MinimalRebuild>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <DisableLanguageExtensions>false</DisableLanguageExtensions>
-      <PrecompiledHeaderOutputFile>.\Debug/vips.pch</PrecompiledHeaderOutputFile>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <CallingConvention>Cdecl</CallingConvention>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -688,9 +688,7 @@ xcopy /y /q $(ProjectDir)vips\version.h  $(HeadersOutputPath)\vips</Command>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>
       </FunctionLevelLinking>
-      <PrecompiledHeaderOutputFile>.\Release/vips.pch</PrecompiledHeaderOutputFile>
       <DebugInformationFormat />
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -733,9 +731,7 @@ xcopy /y /q $(ProjectDir)vips\version.h  $(HeadersOutputPath)\vips</Command>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>
       </FunctionLevelLinking>
-      <PrecompiledHeaderOutputFile>.\Release/vips.pch</PrecompiledHeaderOutputFile>
       <DebugInformationFormat />
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
