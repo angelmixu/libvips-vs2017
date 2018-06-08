@@ -229,7 +229,7 @@ xcopy /y /q $(vipsSrcPath)\cplusplus\include\vips\vips8  $(HeadersOutputPath)\vi
       </StringPooling>
       <MinimalRebuild>
       </MinimalRebuild>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>
       </FunctionLevelLinking>
       <PrecompiledHeaderOutputFile>.\Release/vips.pch</PrecompiledHeaderOutputFile>

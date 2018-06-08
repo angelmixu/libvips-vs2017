@@ -232,7 +232,7 @@ xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vip
       </StringPooling>
       <MinimalRebuild>
       </MinimalRebuild>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>
       </FunctionLevelLinking>
       <PrecompiledHeaderOutputFile>.\Release/vips.pch</PrecompiledHeaderOutputFile>
