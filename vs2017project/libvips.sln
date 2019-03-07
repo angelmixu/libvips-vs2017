@@ -9,6 +9,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libvipsCC", "libvipsCC.vcxp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libvips-cpp", "libvips-cpp.vcxproj", "{D23809FE-E691-4A65-9241-56CE46AFD3AD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vipstool", "vipstool.vcxproj", "{CCEB010E-A282-4D49-AF2F-2B6B71D709D2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6C203D72-D753-4845-B858-126E7F4A9BA2} = {6C203D72-D753-4845-B858-126E7F4A9BA2}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -41,6 +46,14 @@ Global
 		{D23809FE-E691-4A65-9241-56CE46AFD3AD}.Release|Win32.Build.0 = Release|Win32
 		{D23809FE-E691-4A65-9241-56CE46AFD3AD}.Release|x64.ActiveCfg = Release|x64
 		{D23809FE-E691-4A65-9241-56CE46AFD3AD}.Release|x64.Build.0 = Release|x64
+		{CCEB010E-A282-4D49-AF2F-2B6B71D709D2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CCEB010E-A282-4D49-AF2F-2B6B71D709D2}.Debug|Win32.Build.0 = Debug|Win32
+		{CCEB010E-A282-4D49-AF2F-2B6B71D709D2}.Debug|x64.ActiveCfg = Debug|x64
+		{CCEB010E-A282-4D49-AF2F-2B6B71D709D2}.Debug|x64.Build.0 = Debug|x64
+		{CCEB010E-A282-4D49-AF2F-2B6B71D709D2}.Release|Win32.ActiveCfg = Release|Win32
+		{CCEB010E-A282-4D49-AF2F-2B6B71D709D2}.Release|Win32.Build.0 = Release|Win32
+		{CCEB010E-A282-4D49-AF2F-2B6B71D709D2}.Release|x64.ActiveCfg = Release|x64
+		{CCEB010E-A282-4D49-AF2F-2B6B71D709D2}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

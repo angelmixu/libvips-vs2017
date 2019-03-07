@@ -19,10 +19,13 @@
     <HeadersOutputPath>$(vcpkgInstalledPath)\custom\$(Platform)\include\</HeadersOutputPath>
     <vcpkgIncludePath>$(vcpkgInstalledPath)\$(Platform)\include</vcpkgIncludePath>
     <vcpkgLibrariesPath>$(vcpkgInstalledPath)\$(Platform)\$(LibSubPath)\</vcpkgLibrariesPath>
+	<vcpkgBinariesPath>$(vcpkgInstalledPath)\$(Platform)\$(BinSubPath)\</vcpkgBinariesPath>
+	<DLLPaths>PATH=%PATH%;$(vcpkgBinariesPath);</DLLPaths>
   </PropertyGroup>
   <PropertyGroup>
     <OutDir>$(DLLOutputPath)</OutDir>
     <IntDir>$(ProjectDir)build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+	<LocalDebuggerEnvironment>$(DLLPaths)</LocalDebuggerEnvironment>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
