@@ -1,4 +1,4 @@
 [submodule "srclibvips"]
 	path = srclibvips
-	url=https://github.com/jcupitt/libvips
+url=https://github.com/libvips/libvips
 	branch = master
