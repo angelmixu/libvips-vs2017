@@ -418,6 +418,9 @@
     <ClCompile Include="$(vipsSrcPath)libvips\resample\thumbnail.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\resample\transform.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\resample\vsqbs.cpp" />
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_nifti2vips.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\niftiload.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\niftisave.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\binary.h" />

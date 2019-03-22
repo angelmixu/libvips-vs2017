@@ -1248,6 +1248,15 @@
     <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_video_test.c">
       <Filter>deprecated</Filter>
     </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_nifti2vips.c">
+      <Filter>deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\niftisave.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
+    <ClCompile Include="$(vipsSrcPath)libvips\foreign\niftiload.c">
+      <Filter>foreign</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\binary.h">
