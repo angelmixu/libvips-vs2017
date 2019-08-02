@@ -513,31 +513,31 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6C203D72-D753-4845-B858-126E7F4A9BA2}</ProjectGuid>
     <RootNamespace>vips</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>libvips</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -609,7 +609,7 @@
       <Culture>0x0c0a</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;expat.lib;libexif.lib;jpeg.lib;libpng16$(LibSuffix).lib;tiff$(LibSuffix).lib;lcms2$(LibSuffix).lib;libintl.lib;fontconfig.lib;pango-1.0.lib;pangoft2-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;expat.lib;libexif.lib;jpeg$(LibSuffix).lib;libpng16$(LibSuffix).lib;tiff$(LibSuffix).lib;lcms2$(LibSuffix).lib;libintl.lib;fontconfig.lib;pango-1.0.lib;pangoft2-1.0.lib;zlib$(LibSuffix).lib;lzma.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AssemblyDebug />
@@ -653,7 +653,7 @@ xcopy /y /q $(ProjectDir)vips\version.h  $(HeadersOutputPath)\vips</Command>
       <Culture>0x0c0a</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;expat.lib;libexif.lib;jpeg.lib;libpng16$(LibSuffix).lib;tiff$(LibSuffix).lib;lcms2$(LibSuffix).lib;libintl.lib;fontconfig.lib;pango-1.0.lib;pangoft2-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;expat.lib;libexif.lib;jpeg$(LibSuffix).lib;libpng16$(LibSuffix).lib;tiff$(LibSuffix).lib;lcms2$(LibSuffix).lib;libintl.lib;fontconfig.lib;pango-1.0.lib;pangoft2-1.0.lib;zlib$(LibSuffix).lib;lzma.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AssemblyDebug />
@@ -698,7 +698,7 @@ xcopy /y /q $(ProjectDir)vips\version.h  $(HeadersOutputPath)\vips</Command>
       <Culture>0x0c0a</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;expat.lib;libexif.lib;jpeg.lib;libpng16$(LibSuffix).lib;tiff$(LibSuffix).lib;lcms2$(LibSuffix).lib;libintl.lib;fontconfig.lib;pango-1.0.lib;pangoft2-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;expat.lib;libexif.lib;jpeg$(LibSuffix).lib;libpng16$(LibSuffix).lib;tiff$(LibSuffix).lib;lcms2$(LibSuffix).lib;libintl.lib;fontconfig.lib;pango-1.0.lib;pangoft2-1.0.lib;zlib$(LibSuffix).lib;lzma.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetMachine>MachineX86</TargetMachine>
       <ImageHasSafeExceptionHandlers />
@@ -741,7 +741,7 @@ xcopy /y /q $(ProjectDir)vips\version.h  $(HeadersOutputPath)\vips</Command>
       <Culture>0x0c0a</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;expat.lib;libexif.lib;jpeg.lib;libpng16$(LibSuffix).lib;tiff$(LibSuffix).lib;lcms2$(LibSuffix).lib;libintl.lib;fontconfig.lib;pango-1.0.lib;pangoft2-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;expat.lib;libexif.lib;jpeg$(LibSuffix).lib;libpng16$(LibSuffix).lib;tiff$(LibSuffix).lib;lcms2$(LibSuffix).lib;libintl.lib;fontconfig.lib;pango-1.0.lib;pangoft2-1.0.lib;zlib$(LibSuffix).lib;lzma.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
