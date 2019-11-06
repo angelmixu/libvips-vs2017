@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="$(vipsSrcPath)libvipsCC\include\vips\VDisplay.h" />
-    <ClInclude Include="$(vipsSrcPath)libvipsCC\include\vips\VError.h" />
-    <ClInclude Include="$(vipsSrcPath)libvipsCC\include\vips\VImage.h" />
-    <ClInclude Include="$(vipsSrcPath)libvipsCC\include\vips\vipsc++.h" />
-    <ClInclude Include="$(vipsSrcPath)libvipsCC\include\vips\vipscpp.h" />
-    <ClInclude Include="$(vipsSrcPath)libvipsCC\include\vips\VMask.h" />
+    <ClInclude Include="..\libvipsCC\include\vips\VDisplay.h" />
+    <ClInclude Include="..\libvipsCC\include\vips\VError.h" />
+    <ClInclude Include="..\libvipsCC\include\vips\VImage.h" />
+    <ClInclude Include="..\libvipsCC\include\vips\vipsc++.h" />
+    <ClInclude Include="..\libvipsCC\include\vips\vipscpp.h" />
+    <ClInclude Include="..\libvipsCC\include\vips\VMask.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(vipsSrcPath)libvipsCC\VDisplay.cc" />
-    <ClCompile Include="$(vipsSrcPath)libvipsCC\VError.cc" />
-    <ClCompile Include="$(vipsSrcPath)libvipsCC\VImage.cc" />
-    <ClCompile Include="$(vipsSrcPath)libvipsCC\vipsc++.cc" />
-    <ClCompile Include="$(vipsSrcPath)libvipsCC\VMask.cc" />
+    <ClCompile Include="..\libvipsCC\VDisplay.cc" />
+    <ClCompile Include="..\libvipsCC\VError.cc" />
+    <ClCompile Include="..\libvipsCC\VImage.cc" />
+    <ClCompile Include="..\libvipsCC\vipsc++.cc" />
+    <ClCompile Include="..\libvipsCC\VMask.cc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(vipsSrcPath)libvipsCC\include\vips\vips" />
     <None Include="libvipsCC.def" />
+    <None Include="..\libvipsCC\include\vips\vips" />
   </ItemGroup>
 </Project>
