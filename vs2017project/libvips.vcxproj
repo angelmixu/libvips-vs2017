@@ -327,7 +327,6 @@
     <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\invfft.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\phasecor.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\freqfilt\spectrum.c" />
-    <ClCompile Include="$(vipsSrcPath)libvips\fuzz\fuzz_new_from_buffer.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\histogram\histogram.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_cum.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\histogram\hist_entropy.c" />
@@ -421,6 +420,12 @@
     <ClCompile Include="$(vipsSrcPath)libvips\deprecated\im_nifti2vips.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\foreign\niftiload.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\foreign\niftisave.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\CMYK2XYZ.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\profiles.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\profile_load.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\colour\XYZ2CMYK.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\conversion\switch.c" />
+    <ClCompile Include="$(vipsSrcPath)libvips\histogram\case.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\binary.h" />
@@ -504,6 +509,7 @@
     <ClInclude Include="$(vipsSrcPath)libvips\mosaicing\pmosaicing.h" />
     <ClInclude Include="$(vipsSrcPath)libvips\resample\presample.h" />
     <ClInclude Include="$(vipsSrcPath)libvips\resample\templates.h" />
+    <ClInclude Include="$(vipsSrcPath)libvips\colour\profiles.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="vips\version.h" />
   </ItemGroup>

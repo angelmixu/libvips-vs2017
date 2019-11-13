@@ -9,15 +9,6 @@ EXPORTS
 
 ;new exports
 vips_argument_get_id
-im__input_int
-im__input_intvec
-im__output_int
-im__input_double
-im__output_double
-im__input_string
-im__input_imagevec
-im__input_image
-im__output_image
 
 _vips__argument_id DATA
 cbrt_table DATA
@@ -1480,6 +1471,7 @@ vips_image_eval
 vips_image_generate
 vips_image_get
 vips_image_get_area
+vips_image_get_array_int
 vips_image_get_as_string
 vips_image_get_bands
 vips_image_get_blob
@@ -1549,6 +1541,7 @@ vips_image_print_field
 vips_image_remove
 vips_image_set
 vips_image_set_area
+vips_image_set_array_int
 vips_image_set_blob
 vips_image_set_delete_on_close
 vips_image_set_double

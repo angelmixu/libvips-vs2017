@@ -144,6 +144,7 @@
       <PrecompiledHeaderOutputFile>.\Debug/vips.pch</PrecompiledHeaderOutputFile>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <CallingConvention>Cdecl</CallingConvention>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\libvipsCC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -165,8 +166,8 @@
     </Bscmake>
     <PostBuildEvent>
       <Command>md $(HeadersOutputPath)\vips
-xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\*.h  $(HeadersOutputPath)\vips
-xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vips</Command>
+xcopy /y /q $(vipsSrcPath)..\libvipsCC\include\vips\*.h  $(HeadersOutputPath)\vips
+xcopy /y /q $(vipsSrcPath)..\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vips</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -190,6 +191,7 @@ xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vip
       <PrecompiledHeaderOutputFile>.\Debug/vips.pch</PrecompiledHeaderOutputFile>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <CallingConvention>Cdecl</CallingConvention>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\libvipsCC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -210,8 +212,8 @@ xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vip
     </Bscmake>
     <PostBuildEvent>
       <Command>md $(HeadersOutputPath)\vips
-xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\*.h  $(HeadersOutputPath)\vips
-xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vips</Command>
+xcopy /y /q $(vipsSrcPath)..\libvipsCC\include\vips\*.h  $(HeadersOutputPath)\vips
+xcopy /y /q $(vipsSrcPath)..\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vips</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -238,6 +240,7 @@ xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vip
       <PrecompiledHeaderOutputFile>.\Release/vips.pch</PrecompiledHeaderOutputFile>
       <DebugInformationFormat />
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\libvipsCC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -255,8 +258,8 @@ xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vip
     </Bscmake>
     <PostBuildEvent>
       <Command>md $(HeadersOutputPath)\vips
-xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\*.h  $(HeadersOutputPath)\vips
-xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vips</Command>
+xcopy /y /q $(vipsSrcPath)..\libvipsCC\include\vips\*.h  $(HeadersOutputPath)\vips
+xcopy /y /q $(vipsSrcPath)..\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vips</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -283,6 +286,7 @@ xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vip
       <PrecompiledHeaderOutputFile>.\Release/vips.pch</PrecompiledHeaderOutputFile>
       <DebugInformationFormat />
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\libvipsCC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -300,8 +304,8 @@ xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vip
     </Bscmake>
     <PostBuildEvent>
       <Command>md $(HeadersOutputPath)\vips
-xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\*.h  $(HeadersOutputPath)\vips
-xcopy /y /q $(vipsSrcPath)\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vips</Command>
+xcopy /y /q $(vipsSrcPath)..\libvipsCC\include\vips\*.h  $(HeadersOutputPath)\vips
+xcopy /y /q $(vipsSrcPath)..\libvipsCC\include\vips\vips  $(HeadersOutputPath)\vips</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

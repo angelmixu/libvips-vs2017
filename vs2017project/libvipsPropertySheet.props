@@ -36,7 +36,7 @@
     <ClCompile>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <TreatSpecificWarningsAsErrors>4013;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
-      <AdditionalIncludeDirectories>.\;$(vipsSrcPath)libvips\include\;$(vipsSrcPath)libvipsCC\include\;$(vipsSrcPath)cplusplus\include\;$(vcpkgIncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;$(vipsSrcPath)libvips\include\;$(vipsSrcPath)cplusplus\include\;$(vcpkgIncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>$(vipsDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>$(IntDir)\$(ProjectName)\$(ConfigurationName)\%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)\$(ProjectName)\$(ConfigurationName)\%(RelativeDir)</ObjectFileName>
