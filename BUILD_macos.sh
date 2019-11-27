@@ -27,6 +27,7 @@ done
 # set deployment target to macOS 10.9:
 export MACOSX_DEPLOYMENT_TARGET=10.9
 
+## NOTE!!! gobject-instrspection is needed, but install it without installing glib, libffi, or other libraries!!!
 ## $ brew install autoconf automake gtk-doc gobject-introspection
 
 
@@ -38,6 +39,8 @@ export REQUIRED_CFLAGS="-I$OSS_BINARIES_PATH/include"
 export REQUIRED_LIBS="-framework CoreServices -framework CoreFoundation -framework CoreGraphics -framework CoreText -liconv -L$OSS_BINARIES_PATH/$libPath -lintl -lffi -lglib-2.0 -lgobject-2.0 -lgio-2.0 -lgmodule-2.0 -lgthread-2.0 -lpango-1 -lpangoft2-1 -lfontconfig -llcms -lpng -lturbojpeg -llibexif -ltiff -lz -lpcre -llzma -lharfbuzz -lfreetype -lbz2"
 export GTHREAD_CFLAGS="-I$OSS_BINARIES_PATH/include"
 export GTHREAD_LIBS="-L$OSS_BINARIES_PATH/$libPath"
+export THREADS_CFLAGS="-I$OSS_BINARIES_PATH/include"
+export THREADS_LIBS="-L$OSS_BINARIES_PATH/$libPath"
 
 if [ "$configuration" == "Debug" ]; then
 	export REQUIRED_LIBS="-framework CoreServices -framework CoreFoundation -framework CoreGraphics -framework CoreText -liconv -L$OSS_BINARIES_PATH/$libPath -lintl -lffi -lglib-2.0 -lgobject-2.0 -lgio-2.0 -lgmodule-2.0 -lgthread-2.0 -lpango-1 -lpangoft2-1 -lfontconfig -llcmsd -lpng -lturbojpeg -llibexif -ltiff -lz -lpcre -llzma -lharfbuzz -lfreetyped -lbz2d"
@@ -79,13 +82,17 @@ sh autogen.sh --enable-static=no --enable-shared=yes --enable-debug=no --without
 
 make -j 4
 
-cp -Ra libvips/.libs/libvips.*dylib cplusplus/.libs/libvips-cpp.*dylib "$DESTINATION_PATH/$configuration"
+install_name_tool -id @rpath/libvips.dylib libvips/.libs/libvips.42.dylib
+cp -Ra libvips/.libs/libvips.42.dylib "$DESTINATION_PATH/$configuration/libvips.dylib"
+install_name_tool -id @rpath/libvips-cpp.dylib cplusplus/.libs/libvips-cpp.42.dylib 
+install_name_tool -change /usr/local/lib/libvips.42.dylib @rpath/libvips.dylib cplusplus/.libs/libvips-cpp.42.dylib 
+cp -Ra cplusplus/.libs/libvips-cpp.42.dylib "$DESTINATION_PATH/$configuration/libvips-cpp.dylib"
 mkdir -p $DESTINATION_PATH/include/vips
 cp -Ra libvips/include/vips/*.h $DESTINATION_PATH/include/vips
 cp -Ra cplusplus/include/vips/*.h cplusplus/include/vips/vips8 $DESTINATION_PATH/include/vips/
 
 popd
 
-g++ -dynamiclib -o $DESTINATION_PATH/$configuration/libvipsCC.dylib -install_name @rpath/libvipsCC.dylib libvipsCC/VImage.cc libvipsCC/VError.cc libvipsCC/VDisplay.cc libvipsCC/VMask.cc -Isrclibvips/libvips/include/ -I$OSS_BINARIES_PATH/include -IlibvipsCC/include -lvips -lgobject-2 -L$OSS_BINARIES_PATH/$libPath -Lsrclibvips/libvips/.libs
+g++ -dynamiclib -o $DESTINATION_PATH/$configuration/libvipsCC.dylib -install_name @rpath/libvipsCC.dylib libvipsCC/VImage.cc libvipsCC/VError.cc libvipsCC/VDisplay.cc libvipsCC/VMask.cc -Isrclibvips/libvips/include/ -I$OSS_BINARIES_PATH/include -IlibvipsCC/include -lvips -lgobject-2.0 -L$OSS_BINARIES_PATH/$libPath -Lsrclibvips/libvips/.libs -install_name @rpath/libvipsCC.dylib
 cp -Ra libvipsCC/include/vips/*.h libvipsCC/include/vips/vips $DESTINATION_PATH/include/vips/
 
