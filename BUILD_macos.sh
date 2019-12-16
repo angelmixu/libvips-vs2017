@@ -43,7 +43,7 @@ export THREADS_CFLAGS="-I$OSS_BINARIES_PATH/include"
 export THREADS_LIBS="-L$OSS_BINARIES_PATH/$libPath"
 
 if [ "$configuration" == "Debug" ]; then
-	export REQUIRED_LIBS="-framework CoreServices -framework CoreFoundation -framework CoreGraphics -framework CoreText -liconv -L$OSS_BINARIES_PATH/$libPath -lintl -lffi -lglib-2.0 -lgobject-2.0 -lgio-2.0 -lgmodule-2.0 -lgthread-2.0 -lpango-1 -lpangoft2-1 -lfontconfig -llcmsd -lpng -lturbojpeg -llibexif -ltiff -lz -lpcre -llzma -lharfbuzz -lfreetyped -lbz2d"
+	export REQUIRED_LIBS="-framework CoreServices -framework CoreFoundation -framework CoreGraphics -framework CoreText -liconv -L$OSS_BINARIES_PATH/$libPath -lintl -lffi -lglib-2.0 -lgobject-2.0 -lgio-2.0 -lgmodule-2.0 -lgthread-2.0 -lpango-1 -lpangoft2-1 -lfontconfig -llcmsd -lpng -lturbojpeg -llibexif -ltiffd -lz -lpcre -llzmad -lharfbuzz -lfreetyped -lbz2d"
 fi
 
 # also there's a script from glib needed for building vips, we should add the
