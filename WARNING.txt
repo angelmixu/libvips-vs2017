@@ -1,0 +1,168 @@
+Take care of this change in origin repo: "40bffa8 - small reformats"
+
+This commit undoes some needed changes for our software!!!
+If submodule is updated, take a look at the functionality of this change.
+
+The commit changes tiff2vips.c function rtiff_parse_copy, this is how it is right now:
+
+
+/* Read a regular multiband image where we can just copy pixels from the tiff
+ * buffer.
+ */
+static int
+rtiff_parse_copy( Rtiff *rtiff, VipsImage *out )
+{
+	int samples_per_pixel = rtiff->header.samples_per_pixel;
+	int photometric_interpretation = 
+		rtiff->header.photometric_interpretation;
+	int inkset = rtiff->header.inkset;
+
+	if( rtiff_non_fractional( rtiff ) )
+		return( -1 );
+
+	out->Bands = samples_per_pixel; 
+	out->BandFmt = rtiff_guess_format( rtiff );
+	if( out->BandFmt == VIPS_FORMAT_NOTSET )
+		return( -1 ); 
+	out->Coding = VIPS_CODING_NONE; 
+
+	if( samples_per_pixel >= 3 &&
+		(photometric_interpretation == PHOTOMETRIC_RGB ||
+		 photometric_interpretation == PHOTOMETRIC_YCBCR) ) {
+		if( out->BandFmt == VIPS_FORMAT_USHORT )
+			out->Type = VIPS_INTERPRETATION_RGB16; 
+		else if( !vips_band_format_isint( out->BandFmt ) )
+			/* Most float images use 0 - 1 for black - white.
+			 * Photoshop uses 0 - 1 and no gamma. 
+			 */
+			out->Type = VIPS_INTERPRETATION_scRGB; 
+		else
+			out->Type = VIPS_INTERPRETATION_sRGB; 
+	}
+
+	if( samples_per_pixel >= 3 &&
+		photometric_interpretation == PHOTOMETRIC_CIELAB )
+		out->Type = VIPS_INTERPRETATION_LAB; 
+
+	if( samples_per_pixel >= 4 &&
+		photometric_interpretation == PHOTOMETRIC_SEPARATED &&
+		inkset == INKSET_CMYK)
+		out->Type = VIPS_INTERPRETATION_CMYK; 
+
+	if (samples_per_pixel >= 1 &&
+		photometric_interpretation == PHOTOMETRIC_SEPARATED &&
+		inkset == INKSET_MULTIINK)
+		out->Type = VIPS_INTERPRETATION_MULTIBAND;
+
+	rtiff->sfn = rtiff_memcpy_line;
+	rtiff->client = out;
+
+	/* We expand YCBCR images to RGB using JPEGCOLORMODE_RGB, and this
+	 * means we need a slightly larger read buffer for the edge pixels. In
+	 * turn, this means we can't just memcpy to libvips regions.
+	 */
+	rtiff->memcpy = photometric_interpretation != PHOTOMETRIC_YCBCR;
+
+	return( 0 );
+}
+
+
+And changes vips2tiff.c function wtiff_write_header in the color fields section, now it is like this:
+
+
+	/* And colour fields.
+	 */
+	if( wtiff->im->Coding == VIPS_CODING_LABQ ) {
+		TIFFSetField( tif, TIFFTAG_SAMPLESPERPIXEL, 3 );
+		TIFFSetField( tif, TIFFTAG_BITSPERSAMPLE, 8 );
+		TIFFSetField( tif, TIFFTAG_PHOTOMETRIC, PHOTOMETRIC_CIELAB );
+	}
+	else if( wtiff->onebit ) {
+		TIFFSetField( tif, TIFFTAG_SAMPLESPERPIXEL, 1 );
+		TIFFSetField( tif, TIFFTAG_BITSPERSAMPLE, 1 );
+		TIFFSetField( tif, TIFFTAG_PHOTOMETRIC, 
+			wtiff->miniswhite ? 
+				PHOTOMETRIC_MINISWHITE :  
+				PHOTOMETRIC_MINISBLACK ); 
+	}
+	else {
+		int photometric;
+
+		/* Number of bands that have colour in .. other bands are saved
+		 * as alpha.
+		 */
+		int colour_bands;
+
+		int alpha_bands;
+
+		TIFFSetField( tif, TIFFTAG_SAMPLESPERPIXEL, wtiff->im->Bands );
+		TIFFSetField( tif, TIFFTAG_BITSPERSAMPLE, 
+			vips_format_sizeof( wtiff->im->BandFmt ) << 3 );
+
+		if (wtiff->im->Type == VIPS_INTERPRETATION_B_W ||
+			wtiff->im->Type == VIPS_INTERPRETATION_GREY16) {
+			// Mono or mono + alpha.
+			photometric = wtiff->miniswhite ?
+				PHOTOMETRIC_MINISWHITE :
+				PHOTOMETRIC_MINISBLACK;
+			colour_bands = 1;
+		}
+		else if( wtiff->im->Type == VIPS_INTERPRETATION_LAB || 
+			wtiff->im->Type == VIPS_INTERPRETATION_LABS ) {
+			photometric = PHOTOMETRIC_CIELAB;
+			colour_bands = 3;
+		}
+		else if( wtiff->im->Type == VIPS_INTERPRETATION_CMYK &&
+			wtiff->im->Bands >= 4 ) {
+			photometric = PHOTOMETRIC_SEPARATED;
+			TIFFSetField( tif, 
+				TIFFTAG_INKSET, INKSET_CMYK );
+			colour_bands = 4;
+		}
+		else if (wtiff->im->Type == VIPS_INTERPRETATION_MULTIBAND ) {
+			photometric = PHOTOMETRIC_SEPARATED;
+			TIFFSetField(tif,
+				TIFFTAG_INKSET, INKSET_MULTIINK);
+			colour_bands = 4;
+		}
+		else if( wtiff->compression == COMPRESSION_JPEG &&
+			wtiff->im->Bands == 3 &&
+			wtiff->im->BandFmt == VIPS_FORMAT_UCHAR &&
+			(!wtiff->rgbjpeg && wtiff->Q < 90) ) { 
+			/* This signals to libjpeg that it can do
+				* YCbCr chrominance subsampling from RGB, not
+				* that we will supply the image as YCbCr.
+				*/
+			photometric = PHOTOMETRIC_YCBCR;
+			TIFFSetField( tif, TIFFTAG_JPEGCOLORMODE, 
+				JPEGCOLORMODE_RGB );
+			colour_bands = 3;
+		}
+		else {
+			/* Some kind of generic multi-band image ..
+				* save the first three bands as RGB, the rest
+				* as alpha.
+				*/
+			photometric = PHOTOMETRIC_RGB;
+			colour_bands = 3;
+		}
+
+		alpha_bands = VIPS_CLIP( 0, 
+			wtiff->im->Bands - colour_bands, MAX_ALPHA );
+		if( alpha_bands > 0 ) { 
+			uint16 v[MAX_ALPHA];
+			int i;
+
+			/* EXTRASAMPLE_UNASSALPHA means generic extra
+			 * alpha-like channels. ASSOCALPHA means pre-multipled
+			 * alpha only. 
+			 */
+			for( i = 0; i < alpha_bands; i++ )
+				v[i] = EXTRASAMPLE_UNASSALPHA;
+			TIFFSetField( tif, 
+				TIFFTAG_EXTRASAMPLES, alpha_bands, v );
+		}
+
+		TIFFSetField( tif, TIFFTAG_PHOTOMETRIC, photometric );
+	}
+	

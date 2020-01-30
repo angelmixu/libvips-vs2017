@@ -257,7 +257,7 @@ typedef long ssize_t;
 #define HAVE_RESETIMAGEPROPERTYITERATOR 1
 
 /* define if you have librsvg-2.0 >= 2.34.0 and cairo >= 1.2 installed. */
-//TODO #define HAVE_RSVG 1
+#define HAVE_RSVG 1
 
 /* Define to 1 if you have the `SetImageOption' function. */
 #define HAVE_SETIMAGEOPTION 1
