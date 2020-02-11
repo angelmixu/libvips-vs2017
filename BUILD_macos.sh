@@ -3,6 +3,7 @@ set -e
 
 libPath=lib
 configuration=Release
+libSuffix=
 
 shopt -s nocasematch
 while test $# -gt 0
@@ -12,9 +13,11 @@ do
             ;;
         debug) libPath=debug/lib
 				configuration=Debug
+                libSuffix=d
             ;;
         release) libPath=lib
 				configuration=Release
+                libSuffix=
             ;;
         *) echo "wrong argument: $1"
 			exit 1
@@ -36,15 +39,14 @@ export MACOSX_DEPLOYMENT_TARGET=10.9
 
 export OSS_BINARIES_PATH=~/code/sampi/ossBinaries/macOS
 export REQUIRED_CFLAGS="-I$OSS_BINARIES_PATH/include"
-export REQUIRED_LIBS="-framework CoreServices -framework CoreFoundation -framework CoreGraphics -framework CoreText -liconv -L$OSS_BINARIES_PATH/$libPath -lintl -lffi -lglib-2.0 -lgobject-2.0 -lgio-2.0 -lgmodule-2.0 -lgthread-2.0 -lpango-1 -lpangoft2-1 -lfontconfig -llcms -lpng -lturbojpeg -llibexif -ltiff -lz -lpcre -llzma -lharfbuzz -lfreetype -lbz2"
+export REQUIRED_LIBS="-framework CoreServices -framework CoreFoundation -framework CoreGraphics -framework CoreText -liconv \
+    -L$OSS_BINARIES_PATH/$libPath -lintl -lffi -lglib-2.0 -lgobject-2.0 -lgio-2.0 -lgmodule-2.0 -lgthread-2.0 -lpango-1 -lpangoft2-1 \
+    -lfontconfig -llcms$libSuffix -lpng -lturbojpeg -llibexif -ltiff$libSuffix -lz -lpcre -llzma$libSuffix -lharfbuzz \
+    -lfreetype$libSuffix -lbz2$libSuffix -lcairo$libSuffix -lrsvg-2.40$libSuffix"
 export GTHREAD_CFLAGS="-I$OSS_BINARIES_PATH/include"
 export GTHREAD_LIBS="-L$OSS_BINARIES_PATH/$libPath"
 export THREADS_CFLAGS="-I$OSS_BINARIES_PATH/include"
 export THREADS_LIBS="-L$OSS_BINARIES_PATH/$libPath"
-
-if [ "$configuration" == "Debug" ]; then
-	export REQUIRED_LIBS="-framework CoreServices -framework CoreFoundation -framework CoreGraphics -framework CoreText -liconv -L$OSS_BINARIES_PATH/$libPath -lintl -lffi -lglib-2.0 -lgobject-2.0 -lgio-2.0 -lgmodule-2.0 -lgthread-2.0 -lpango-1 -lpangoft2-1 -lfontconfig -llcmsd -lpng -lturbojpeg -llibexif -ltiffd -lz -lpcre -llzmad -lharfbuzz -lfreetyped -lbz2d"
-fi
 
 # also there's a script from glib needed for building vips, we should add the
 # last path to the environment variable in order for vips to build correctly:
@@ -65,6 +67,8 @@ export ZLIB_CFLAGS="-I$OSS_BINARIES_PATH/include"
 export ZLIB_LIBS="-L$OSS_BINARIES_PATH/$libPath"
 export LCMS_CFLAGS="-I$OSS_BINARIES_PATH/include"
 export LCMS_LIBS="-L$OSS_BINARIES_PATH/$libPath"
+export RSVG_CFLAGS="-I$OSS_BINARIES_PATH/include"
+export RSVG_LIBS="-L$OSS_BINARIES_PATH/$libPath"
 
 if [ "$configuration" == "Debug" ]; then
 	CFLAGS="$CFLAGS -g -O0" 
