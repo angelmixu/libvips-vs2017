@@ -51,7 +51,7 @@ export THREADS_LIBS="-L$OSS_BINARIES_PATH/$libPath"
 # also there's a script from glib needed for building vips, we should add the
 # last path to the environment variable in order for vips to build correctly:
 
-export PATH=$OSS_BINARIES_PATH:$PATH
+export PATH=$OSS_BINARIES_PATH/tools/glib:$PATH
 
 export JPEG_CFLAGS="-I$OSS_BINARIES_PATH/include"
 export JPEG_LIBS="-L$OSS_BINARIES_PATH/$libPath"
