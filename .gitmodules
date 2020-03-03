@@ -1,4 +1,4 @@
 [submodule "srclibvips"]
 	path = srclibvips
-url=https://github.com/libvips/libvips
-	branch = master
+url=https://github.com/angelmixu/libvips
+	branch = inedit-channel-map 
