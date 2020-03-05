@@ -196,7 +196,23 @@ VImage::VImage( void *buffer, int width, int height, int bands, TBandFmt format 
 {
 	_ref = new refblock;
 
-	if( !(_ref->im = im_image( buffer, width, height, 
+	size_t formatsize = 1;
+	switch (format)
+	{
+		case FMTUSHORT:
+		case FMTSHORT:
+			formatsize = 2;
+		case FMTUINT:
+		case FMTINT:
+		case FMTFLOAT:
+			formatsize = 4;
+		case FMTDOUBLE:
+			formatsize = 8;
+		default:
+			break;
+	}
+	size_t size = width * height * bands * formatsize;
+	if( !(_ref->im = vips_image_new_from_memory( buffer, size, width, height,
 		bands, VipsBandFmt( format ) )) )
 		verror();
 	_ref->close_on_delete = 1;

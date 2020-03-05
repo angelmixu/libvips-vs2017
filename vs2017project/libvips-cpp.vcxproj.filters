@@ -9,11 +9,13 @@
     <ClCompile Include="$(vipsSrcPath)cplusplus\VImage.cpp" />
     <ClCompile Include="$(vipsSrcPath)cplusplus\VInterpolate.cpp" />
     <ClCompile Include="$(vipsSrcPath)cplusplus\vips-operators.cpp" />
+    <ClCompile Include="..\srclibvips\cplusplus\VConnection.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(vipsSrcPath)cplusplus\include\vips\vips-operators.h" />
     <ClInclude Include="$(vipsSrcPath)cplusplus\include\vips\VError8.h" />
     <ClInclude Include="$(vipsSrcPath)cplusplus\include\vips\VImage8.h" />
     <ClInclude Include="$(vipsSrcPath)cplusplus\include\vips\VInterpolate8.h" />
+    <ClInclude Include="..\srclibvips\cplusplus\include\vips\VConnection8.h" />
   </ItemGroup>
 </Project>

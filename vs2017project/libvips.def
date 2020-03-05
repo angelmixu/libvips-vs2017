@@ -745,19 +745,6 @@ vips__input_interpolate_init
 vips__insert_just_one
 vips__insert_paste_region
 vips__interpolate_init
-vips__isjpeg
-vips__isjpeg_buffer
-vips__istiff
-vips__istiff_buffer
-vips__istifftiled
-vips__istifftiled_buffer
-;vips__iswebp
-;vips__iswebp_buffer
-vips__jpeg_read_buffer
-vips__jpeg_read_file
-vips__jpeg_suffs DATA
-vips__jpeg_write_buffer
-vips__jpeg_write_file
 vips__leak DATA
 vips__link_break_all
 vips__link_map
@@ -782,17 +769,6 @@ vips__open_image_read
 vips__open_image_write
 vips__open_read
 vips__parse_size
-vips__png_header
-vips__png_header_buffer
-vips__png_isinterlaced
-vips__png_isinterlaced_buffer
-vips__png_ispng
-vips__png_ispng_buffer
-vips__png_read
-vips__png_read_buffer
-vips__png_suffs DATA
-vips__png_write
-vips__png_write_buf
 vips__print_renders
 vips__progress DATA
 vips__pythagoras_line
@@ -827,14 +803,8 @@ vips__thread_profile_detach
 vips__thread_profile_stop
 vips__threadpool_init
 vips__tiff_init
-vips__tiff_openin
-vips__tiff_openin_buffer
 vips__tiff_openout
 vips__tiff_openout_buffer
-vips__tiff_read
-vips__tiff_read_buffer
-vips__tiff_read_header
-vips__tiff_read_header_buffer
 vips__tiff_write
 vips__tiff_write_buf
 vips__tile_height DATA
@@ -1290,8 +1260,10 @@ vips_foreign_dz_depth_get_type
 vips_foreign_dz_layout_get_type
 vips_foreign_find_load
 vips_foreign_find_load_buffer
+vips_foreign_find_load_source
 vips_foreign_find_save
 vips_foreign_find_save_buffer
+vips_foreign_find_save_target
 vips_foreign_flags
 vips_foreign_flags_get_type
 vips_foreign_get_type
@@ -2084,3 +2056,13 @@ vips_zoom
 vips_zoom_get_type
 write_thread_state_get_type
 
+vips_source_get_type
+vips_source_new_from_descriptor
+vips_source_new_from_file
+vips_source_new_from_blob
+vips_source_new_from_memory
+vips_source_new_from_options
+vips_target_get_type
+vips_target_new_to_descriptor
+vips_target_new_to_file
+vips_target_new_to_memory

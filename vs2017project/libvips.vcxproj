@@ -299,7 +299,6 @@
     <ClCompile Include="$(vipsSrcPath)libvips\foreign\pdfload.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\foreign\pngload.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\foreign\pngsave.c" />
-    <ClCompile Include="$(vipsSrcPath)libvips\foreign\ppm.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\foreign\ppmload.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\foreign\ppmsave.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\foreign\radiance.c" />
@@ -426,6 +425,12 @@
     <ClCompile Include="$(vipsSrcPath)libvips\colour\XYZ2CMYK.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\conversion\switch.c" />
     <ClCompile Include="$(vipsSrcPath)libvips\histogram\case.c" />
+    <ClCompile Include="..\srclibvips\libvips\iofuncs\connection.c" />
+    <ClCompile Include="..\srclibvips\libvips\iofuncs\sbuf.c" />
+    <ClCompile Include="..\srclibvips\libvips\iofuncs\source.c" />
+    <ClCompile Include="..\srclibvips\libvips\iofuncs\sourcecustom.c" />
+    <ClCompile Include="..\srclibvips\libvips\iofuncs\target.c" />
+    <ClCompile Include="..\srclibvips\libvips\iofuncs\targetcustom.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(vipsSrcPath)libvips\arithmetic\binary.h" />

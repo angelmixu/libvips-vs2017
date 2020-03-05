@@ -873,9 +873,6 @@
     <ClCompile Include="$(vipsSrcPath)libvips\foreign\pngsave.c">
       <Filter>foreign</Filter>
     </ClCompile>
-    <ClCompile Include="$(vipsSrcPath)libvips\foreign\ppm.c">
-      <Filter>foreign</Filter>
-    </ClCompile>
     <ClCompile Include="$(vipsSrcPath)libvips\foreign\ppmload.c">
       <Filter>foreign</Filter>
     </ClCompile>
@@ -1268,6 +1265,24 @@
     </ClCompile>
     <ClCompile Include="$(vipsSrcPath)libvips\histogram\case.c">
       <Filter>histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="..\srclibvips\libvips\iofuncs\sbuf.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\srclibvips\libvips\iofuncs\source.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\srclibvips\libvips\iofuncs\sourcecustom.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\srclibvips\libvips\iofuncs\target.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\srclibvips\libvips\iofuncs\targetcustom.c">
+      <Filter>iofuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\srclibvips\libvips\iofuncs\connection.c">
+      <Filter>iofuncs</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

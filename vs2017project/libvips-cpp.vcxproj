@@ -37,12 +37,14 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="..\srclibvips\cplusplus\VConnection.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(vipsSrcPath)cplusplus\include\vips\VError8.h" />
     <ClInclude Include="$(vipsSrcPath)cplusplus\include\vips\VImage8.h" />
     <ClInclude Include="$(vipsSrcPath)cplusplus\include\vips\VInterpolate8.h" />
     <ClInclude Include="$(vipsSrcPath)cplusplus\include\vips\vips-operators.h" />
+    <ClInclude Include="..\srclibvips\cplusplus\include\vips\VConnection8.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D23809FE-E691-4A65-9241-56CE46AFD3AD}</ProjectGuid>
