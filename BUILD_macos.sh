@@ -30,14 +30,14 @@ done
 # set deployment target to macOS 10.9:
 export MACOSX_DEPLOYMENT_TARGET=10.9
 
-## NOTE!!! gobject-instrspection is needed, but install it without installing glib, libffi, or other libraries!!!
-## $ brew install autoconf automake gtk-doc gobject-introspection
+## NOTE!!! gobject-instrospection is needed, but install it without installing glib, libffi, or other libraries!!!
+## $ brew install autoconf automake libtool gtk-doc gobject-introspection
 
 
 # Alternatively, you may set the environment variables REQUIRED_CFLAGS
 # and REQUIRED_LIBS to avoid the need to call pkg-config.
 
-export OSS_BINARIES_PATH=~/code/sampi/ossBinaries/macOS
+export OSS_BINARIES_PATH=$(pwd)/../../ossBinaries/macOS
 export REQUIRED_CFLAGS="-I$OSS_BINARIES_PATH/include"
 export REQUIRED_LIBS="-framework CoreServices -framework CoreFoundation -framework CoreGraphics -framework CoreText -liconv \
     -L$OSS_BINARIES_PATH/$libPath -lintl -lffi -lglib-2.0 -lgobject-2.0 -lgio-2.0 -lgmodule-2.0 -lgthread-2.0 -lpango-1 -lpangoft2-1 \
@@ -52,6 +52,7 @@ export THREADS_LIBS="-L$OSS_BINARIES_PATH/$libPath"
 # last path to the environment variable in order for vips to build correctly:
 
 export PATH=$OSS_BINARIES_PATH/tools/glib:$PATH
+export ACLOCAL_PATH=$OSS_BINARIES_PATH/share/aclocal:$OSS_BINARIES_PATH/share/glib-2.0/gettext:$ACLOCAL_PATH
 
 export JPEG_CFLAGS="-I$OSS_BINARIES_PATH/include"
 export JPEG_LIBS="-L$OSS_BINARIES_PATH/$libPath"
@@ -76,7 +77,7 @@ if [ "$configuration" == "Debug" ]; then
 	LDFLAGS="$LDFLAGS -g"
 fi
 
-export DESTINATION_PATH=~/code/sampi/ossBinaries/custom/macOS
+export DESTINATION_PATH=$(pwd)/../../ossBinaries/custom/macOS
 
 pushd srclibvips
 
